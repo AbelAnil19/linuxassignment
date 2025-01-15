@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="linux-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Link to navigate to the top -->
+    <a href="#top" class="scroll-to-top">
+        <img src="up-arrow.png" alt="Go to top" class="up-arrow">
+    </a>
+
+    <!-- Page content -->
+    <h1 class="page-heading" id="top">mv Command</h1>
+
+    <ul id="nav">
+        <li class="nav-item"><a href="home.html"><img src="home-icon.png" alt="Home" class="home-icon" /></a></li>
+        <li class="nav-item"><a href="ls.html">ls</a></li>
+        <li class="nav-item"><a href="cd.html">cd</a></li>
+        <li class="nav-item"><a href="pwd.html">pwd</a></li>
+        <li class="nav-item"><a href="mkdir.html">mkdir</a></li>
+        <li class="nav-item"><a href="rmdir.html">rmdir</a></li>
+        <li class="nav-item"><a href="cp.html">cp</a></li>
+        <li class="nav-item"><a class="active" href="mv.html">mv</a></li>
+        <li class="nav-item"><a href="cat.html">cat</a></li>
+        <li class="nav-item"><a href="touch.html">touch</a></li>
+        <li class="nav-item"><a href="grep.html">grep</a></li>
+    </ul>
+
+    <div class="info-box">
+        <h2 class="info-heading">mv Command in Linux</h2>
+        <p class="info-paragraph">
+            In UNIX-based operating systems like Linux and macOS, <code>mv</code> stands for “move”. As its name suggests, this command is used to rename file directories and move files from one location to another within a file system.
+        </p>
+
+        <h3>Purpose</h3>
+        <p class="info-paragraph">
+            - Relocate files or directories from one location to another within the file system.<br>
+            - Rename files or directories without creating duplicates.<br>
+        </p>
+
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>mv [options(s)] [source_file_name(s)] [Destination_file_name]</code></pre>
+        </div>
+        <p class="info-paragraph"> 
+            Here, <br>
+            - <code>source_file_name(s)</code>: The name of the files that we want to rename or move.<br>
+            - <code>Destination_file_name</code>: The name of the new location or the name of the file.<br>
+        </p>
+
+        <h2 class="info-heading2">Options Available in mv Command</h2>
+
+        <h3>1. -i (interactive)</h3>
+        <p class="info-paragraph2">
+            The “-i” option makes the “mv” command ask for confirmation before overwriting an existing file. If the file doesn’t exist, it will simply rename or move it without prompting.
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>mv -i [source_file/directory_name(s)] [Destination_file/directory_name/path]</code></pre>
+        </div>
+        <p class="info-paragraph2">
+            Enter your source file/directory name in place of <code>[source_file/directory_name(s)]</code> and your destination file/directory name/path in place of <code>[Destination_file/directory_name/path]</code>.
+        </p>
+        <img src="mv_1.png" alt="Linux Commands" class="zoom-image bro" /><br>
+
+        <h3>2. -f (Force)</h3>
+        <p class="info-paragraph2">
+            The <code>mv</code> command prompts for confirmation before overwriting the destination file if a file is write-protected. The <code>-f</code> option overrides this minor protection, forcefully overwriting the destination file and deleting the source file.
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>mv -f [source_file/directory_name(s)] [Destination_file/directory_name/path]</code></pre>
+        </div>
+        <p class="info-paragraph2">Enter your source file/directory name in place of <code>[source_file/directory_name(s)]</code> and your destination file/directory name/path in place of <code>[Destination_file/directory_name/path]</code>.</p>
+        <img src="mv_2.png" alt="Linux Commands" class="zoom-image bro" /><br>
+
+        <h3>3. -–version</h3>
+        <p class="info-paragraph2">
+            This option is used to display the version of <code>mv</code> currently running on your system.
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>mv --version</code></pre>
+        </div>
+        <img src="mv_5.png" alt="Linux Commands" class="zoom-image bro" /><br>
+    </div>
+
+    <div class="info-box">
+        <h2 class="info-heading">Conclusion</h2>
+        <p class="info-paragraph">
+            The <code>mv</code> command is an essential tool for file and directory management in Linux. It allows users to move files or directories efficiently and rename them as needed. By mastering the <code>mv</code> command, users can streamline workflows, enhance file organization, and maintain a clutter-free file system. Understanding options like <code>-i</code> and <code>-f</code> ensures safe and effective use of this powerful command.
+        </p>
+    </div>
+
+    <div class="quote-container">
+        <p class="quote">"Live as if you were to die tomorrow. Learn as if you were to live forever."</p>
+        <p class="author">— Mahatma Gandhi</p>
+    </div>
+</body>
+
+</html>

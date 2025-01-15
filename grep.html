@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="linux-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Link to navigate to the top -->
+    <a href="#top" class="scroll-to-top">
+        <img src="up-arrow.png" alt="Go to top" class="up-arrow">
+    </a>
+
+    <!-- Page content -->
+    <h1 class="page-heading" id="top">grep Command</h1>
+
+    <ul id="nav">
+        <li class="nav-item"><a href="home.html"><img src="home-icon.png" alt="Home" class="home-icon" /></a></li>
+        <li class="nav-item"><a href="ls.html">ls</a></li>
+        <li class="nav-item"><a href="cd.html">cd</a></li>
+        <li class="nav-item"><a href="pwd.html">pwd</a></li>
+        <li class="nav-item"><a href="mkdir.html">mkdir</a></li>
+        <li class="nav-item"><a href="rmdir.html">rmdir</a></li>
+        <li class="nav-item"><a href="cp.html">cp</a></li>
+        <li class="nav-item"><a href="mv.html">mv</a></li>
+        <li class="nav-item"><a href="cat.html">cat</a></li>
+        <li class="nav-item"><a href="touch.html">touch</a></li>
+        <li class="nav-item"><a class="active" href="grep.html">grep</a></li>
+    </ul>
+
+    <div class="info-box">
+        <h2 class="info-heading">grep Command in Linux</h2>
+        <p class="info-paragraph">
+            The grep command in Unix/Linux is a powerful tool used for searching and manipulating text patterns within files. Its name is derived from the ed (editor) command g/re/p (globally search for a regular expression and print matching lines), which reflects its core functionality. grep is widely used by programmers, system administrators, and users alike for its efficiency and versatility in handling text data.
+        </p>
+
+        <h3>Purpose</h3>
+        <p class="info-paragraph">
+            The grep command in Linux is used for searching and filtering text within files or output streams based on specific patterns or regular expressions. It is a powerful tool for extracting relevant information from large files, logs, or command outputs. By using grep, users can quickly locate specific lines of text, making it indispensable for system administrators, developers, and anyone dealing with large datasets or system logs. It supports various options, such as case-insensitive searches, inverted matches, and displaying line numbers, making it highly flexible for a wide range of use cases.
+        </p>
+
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>grep [options] pattern [files]</code></pre>
+        </div>
+
+        <h2 class="info-heading2">Practical Examples of grep Command in Linux</h2>
+
+        <h3>1. Displaying the Count of Number of Matches Using grep</h3>
+        <p class="info-paragraph2">
+            We can find the number of lines that match the given string/pattern.
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>grep -c "string" file_name</code></pre>
+        </div><br>
+        <img src="grep_2.png" alt="Linux Commands" class="zoom-image bro" /><br>
+
+        <h3>2. Show Line Number While Displaying the Output Using grep -n</h3>
+        <p class="info-paragraph2">
+            To show the line number of the file with the line matched.
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>grep -n "string" fileName</code></pre>
+        </div>
+        <img src="grep_6.png" alt="Linux Commands" class="zoom-image bro" /><br>
+    </div>
+
+    <div class="info-box">
+        <h2 class="info-heading">Conclusion</h2>
+        <p class="info-paragraph">
+            The grep command is an essential tool in Linux for searching and filtering text with precision. Its ability to search through files and outputs using patterns or regular expressions makes it invaluable for system administrators, developers, and anyone who needs to quickly locate specific information within large volumes of data. By mastering grep, users can enhance their productivity, streamline troubleshooting processes, and gain deeper insights into their system’s data, making it a crucial command in any Linux user's toolkit.
+        </p>
+    </div>
+
+    <div class="quote-container">
+        <p class="quote">"It does not matter how slowly you go as long as you do not stop."</p>
+        <p class="author">— Confucius</p>
+    </div>
+
+    <div class="last-box">
+        <img src="thanku.jpg" alt="Linux Commands" /><br>
+    </div>
+</body>
+
+</html>

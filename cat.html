@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="linux-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Link to navigate to the top -->
+    <a href="#top" class="scroll-to-top">
+        <img src="up-arrow.png" alt="Go to top" class="up-arrow">
+    </a>
+
+    <!-- Page content -->
+    <h1 class="page-heading" id="top">cat Command</h1>
+
+    <ul id="nav">
+        <li class="nav-item"><a href="home.html"><img src="home-icon.png" alt="Home" class="home-icon" /></a></li>
+        <li class="nav-item"><a href="ls.html">ls</a></li>
+        <li class="nav-item"><a href="cd.html">cd</a></li>
+        <li class="nav-item"><a href="pwd.html">pwd</a></li>
+        <li class="nav-item"><a href="mkdir.html">mkdir</a></li>
+        <li class="nav-item"><a href="rmdir.html">rmdir</a></li>
+        <li class="nav-item"><a href="cp.html">cp</a></li>
+        <li class="nav-item"><a href="mv.html">mv</a></li>
+        <li class="nav-item"><a class="active" href="cat.html">cat</a></li>
+        <li class="nav-item"><a href="touch.html">touch</a></li>
+        <li class="nav-item"><a href="grep.html">grep</a></li>
+    </ul>
+
+    <div class="info-box">
+        <h2 class="info-heading">cat Command in Linux</h2>
+        <p class="info-paragraph">
+            The cat command in Linux is more than just a simple tool; it’s a versatile companion for various file-related operations, allowing users to view, concatenate, create, copy, merge, and manipulate file contents.
+        </p>
+
+        <h3>Purpose</h3>
+        <p class="info-paragraph">
+            - Displaying File Contents: Quickly view the contents of a file directly in the terminal. <br>
+            - Combining Files: Merge multiple files into one by concatenating their contents.<br>
+            - Creating New Files: Generate new files by redirecting output.<br>
+            - Text Manipulation: Work with data streams or modify file content using redirection and piping.
+        </p>
+
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>cat [OPTION] [FILE]</code></pre>
+        </div>
+        <p class="info-paragraph"> 
+            Here, <br>
+
+            [OPTION] : represents various command-line options. <br>
+            
+            [FILE] : the name of the file(s) to be processed. Let’s explore some of the common uses of ‘cat’ along with examples.
+        </p>
+
+        <h2 class="info-heading2">Practical Examples of Cat Command in Linux</h2>
+
+        <h3>1. How to View the Content of a Single File in Linux</h3>
+        <p class="info-paragraph2">
+            The most basic use of ‘cat’ is to display the contents of a file on the terminal. This can be achieved by simply providing the filename as an argument:
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>cat file_name</code></pre>
+        </div><br>
+        <img src="cat_1.png" alt="Linux Commands" class="zoom-image bro" /><br>
+
+        <h3>2. How to Create a File and Add Content in Linux Using `cat` Command</h3>
+        <p class="info-paragraph2">
+            If you want to create a new file or overwrite an existing file with new content, you can use ‘cat’ with the output redirection (`>`):
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>cat > newfile_name</code></pre>
+        </div>
+        <p class="info-paragraph2">This will allow you to type text directly into the terminal, and when you press Ctrl + D, the entered text will be saved to Sample.txt.</p>
+        <img src="cat_4.png" alt="Linux Commands" class="zoom-image bro" /><br>
+
+        <h3>3. How to Append the Contents of One File to the End of Another File</h3>
+        <p class="info-paragraph2">
+            If you want to add the content of one file to another, ‘cat’ can be used along with the append (>>) operator:
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>cat file_name1 >> file_name2</code></pre>
+        </div>
+        <img src="cat_7.png" alt="Linux Commands" class="zoom-image bro" /><br>
+    </div>
+
+    <div class="info-box">
+        <h2 class="info-heading">Conclusion</h2>
+        <p class="info-paragraph">
+            The cat command is a simple yet powerful tool for managing text files in Linux. It enables users to efficiently view, combine, and create files, making it an essential command for daily tasks. Whether you're displaying file contents, merging multiple files, or redirecting data streams, cat simplifies text file operations. By mastering its functionality, users can enhance their efficiency and streamline file management processes in Linux.
+        </p>
+    </div>
+
+    <div class="quote-container">
+        <p class="quote">"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."</p>
+        <p class="author">— Albert Schweitzer</p>
+    </div>
+</body>
+
+</html>

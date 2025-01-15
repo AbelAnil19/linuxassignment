@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="linux-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Link to navigate to the top -->
+    <a href="#top" class="scroll-to-top">
+        <img src="up-arrow.png" alt="Go to top" class="up-arrow">
+    </a>
+
+    <!-- Page content -->
+    <h1 class="page-heading" id="top">ls Command</h1>
+
+    <ul id="nav">
+        <li class="nav-item"><a href="home.html"><img src="home-icon.png" alt="Home" class="home-icon" /></a></li>
+        <li class="nav-item"><a class="active" href="ls.html">ls</a></li>
+        <li class="nav-item"><a href="cd.html">cd</a></li>
+        <li class="nav-item"><a href="pwd.html">pwd</a></li>
+        <li class="nav-item"><a href="mkdir.html">mkdir</a></li>
+        <li class="nav-item"><a href="rmdir.html">rmdir</a></li>
+        <li class="nav-item"><a href="cp.html">cp</a></li>
+        <li class="nav-item"><a href="mv.html">mv</a></li>
+        <li class="nav-item"><a href="cat.html">cat</a></li>
+        <li class="nav-item"><a href="touch.html">touch</a></li>
+        <li class="nav-item"><a href="grep.html">grep</a></li>
+    </ul>
+
+    <div class="info-box">
+        <h2 class="info-heading">ls Command in Linux</h2>
+        <p class="info-paragraph">`ls` is a Linux shell command that lists directory contents of files and directories. It provides valuable information about files, directories, and their attributes.</p>
+
+        <h3>Purpose</h3>
+        <p class="info-paragraph">
+            - To view the contents of a directory. <br>
+            - To inspect details about files and directories.
+        </p>
+        
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code> ls [option] [file/directory] </code></pre>
+        </div>
+
+        <p class="info-paragraph">`ls` will display the contents of the current directory. By default, it lists files and directories in alphabetical order.</p>
+
+        <h2 class="info-heading2">Some practical examples of the ls command are shown below.</h2>
+
+        <h3>1. Open Last Edited File Using <code>ls -t</code></h3>
+        <p class="info-paragraph2">It sorts the files by modification time, showing the last edited file first. Use the combination of `ls` and `head` commands as shown below to open the last edited file in the current directory.</p>
+        <img src="ls_1.png" alt="Linux Commands" class="zoom-image bro" />
+        <p class="info-paragraph2">[Note: This will open the last file you edited (i.e. Business)]</p>
+
+        <h3>2. Display All Information About Files/Directories Using <code>ls -l</code></h3>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code> ls -l </code></pre>
+        </div>
+        <img src="ls_3.png" alt="Linux Commands" class="zoom-image bro" />
+        <p class="info-paragraph2">
+            This displays detailed information about the file/directory. <br><br>
+            <b>Field Explanation</b><br>
+            – normal file <br>
+            d : directory <br>
+            s : socket file <br>
+            l : link file <br><br>
+            <b>Field Descriptions:</b><br>
+            <b>Field 1</b>: File Permissions – Specifies file permissions. Every 3 characters specify read, write, and execute permissions for user (root), group, and others.<br>
+            <b>Field 2</b>: Number of Links – Indicates the number of links for that file.<br>
+            <b>Field 3</b>: Owner – Specifies the file owner.<br>
+            <b>Field 4</b>: Group – Specifies the file group.<br>
+            <b>Field 5</b>: Size – Indicates the file size in bytes.<br>
+            <b>Field 6</b>: Last Modified – Shows the date and time of the last modification.<br>
+            <b>Field 7</b>: File Name – Specifies the name of the file.<br>
+        </p>
+
+        <h3>3. Change the way time information is displayed using <code>–time-style</code> flag</h3>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code> ls -l –time-style=long-iso </code></pre>
+        </div>
+        <p class="info-paragraph2">
+            This command will display the time in <code>YYYY-MM-DD HH:MM</code> format. Other options include:<br>
+            - locale<br>
+            - full-iso<br>
+            - iso
+        </p>
+        <img src="ls_15.png" alt="Linux Commands" class="zoom-image bro" />
+    </div>
+
+    <div class="info-box">
+        <h2 class="info-heading">Conclusion</h2>
+        <p class="info-paragraph">
+            Mastering the `ls` command opens the door to efficient file management and navigation in Linux. By exploring its syntax and diverse options, users can unlock powerful capabilities that streamline their daily tasks. For system administrators, these skills are indispensable for managing complex systems effectively. This article's practical examples provide a solid foundation to build your expertise. Embrace these tools, and let the command line become your ally in simplifying Linux operations.
+        </p>
+    </div>
+
+    <div class="quote-container">
+        <p class="quote">"The only limit to our realization of tomorrow is our doubts of today."</p>
+        <p class="author">— Franklin D. Roosevelt</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="linux-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Link to navigate to the top -->
+    <a href="#top" class="scroll-to-top">
+        <img src="up-arrow.png" alt="Go to top" class="up-arrow">
+    </a>
+
+    <!-- Page content -->
+    <h1 class="page-heading" id="top">cp Command</h1>
+
+    <ul id="nav">
+        <li class="nav-item"><a href="home.html"><img src="home-icon.png" alt="Home" class="home-icon" /></a></li>
+        <li class="nav-item"><a href="ls.html">ls</a></li>
+        <li class="nav-item"><a href="cd.html">cd</a></li>
+        <li class="nav-item"><a href="pwd.html">pwd</a></li>
+        <li class="nav-item"><a href="mkdir.html">mkdir</a></li>
+        <li class="nav-item"><a href="rmdir.html">rmdir</a></li>
+        <li class="nav-item"><a class="active" href="cp.html">cp</a></li>
+        <li class="nav-item"><a href="mv.html">mv</a></li>
+        <li class="nav-item"><a href="cat.html">cat</a></li>
+        <li class="nav-item"><a href="touch.html">touch</a></li>
+        <li class="nav-item"><a href="grep.html">grep</a></li>
+    </ul>
+
+    <div class="info-box">
+        <h2 class="info-heading">cp Command in Linux</h2>
+        <p class="info-paragraph">
+            The <code>cp</code> command is a versatile tool used in Unix-like operating systems for copying files and directories. It offers three principal modes of operation, each serving different purposes.
+        </p>
+
+        <h3>Purpose</h3>
+        <p class="info-paragraph">
+            - File Duplication: Create a copy of a file or directory in the same or a different location.<br>
+            - Backup: Preserve original files while creating backups.<br>
+            - Organization: Facilitate moving or organizing files by duplicating them in different directories.<br>
+        </p>
+
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>cp source_file destination</code></pre>
+        </div>
+
+        <h2 class="info-heading2">Some Practical Examples of the cp Command</h2>
+
+        <h3>1. Copying Between Two Files in Linux</h3>
+        <p class="info-paragraph2">
+            If the <code>cp</code> command contains two file names, it copies the contents of the first file to the second file. If the second file doesn’t exist, it is created, and the content is copied into it. However, if the second file already exists, it is overwritten without warning.
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>cp Src_file Dest_file</code></pre>
+        </div>
+        <p class="info-paragraph2">
+            - If <code>Dest_file</code> does not exist, it is created.<br>
+            - If <code>Dest_file</code> already exists, it is overwritten without any warning.
+        </p>
+        <img src="cp_1.png" alt="Linux Commands" class="zoom-image bro" /><br>
+
+        <h3>2. Copy files to a Directory in Linux</h3>
+        <p class="info-paragraph2">
+            When the <code>cp</code> command has one or more source file arguments and is followed by a destination directory argument, it copies each source file to the destination directory with the same name. If the destination directory does not exist, it is created. If it already exists, the files are overwritten without warning.
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>cp Src_file1 Src_file2 Src_file3 Dest_directory</code></pre>
+        </div>
+        <img src="cp_2.png" alt="Linux Commands" class="zoom-image bro" /><br>
+
+        <h3>3. How to Copy Directories in Linux</h3>
+        <p class="info-paragraph2">
+            In this mode, if the <code>cp</code> command contains two directory names, it copies all files from the source directory to the destination directory. The <code>-R</code> option is typically used to indicate recursive copying for directories.
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>cp -R Src_directory Dest_directory</code></pre>
+        </div>
+        <img src="cp_3.png" alt="Linux Commands" class="zoom-image bro" /><br>
+    </div>
+
+    <div class="info-box">
+        <h2 class="info-heading">Conclusion</h2>
+        <p class="info-paragraph">
+            The <code>cp</code> command is a fundamental tool in Linux for copying files and directories. Its versatility, combined with various options for preserving file attributes, managing symbolic links, and confirming overwrites, makes it an essential utility for both beginners and experienced users. By mastering the <code>cp</code> command, users can efficiently manage data duplication and organization, ensuring smooth and effective workflows in their Linux environments. Whether for backups, file migration, or system management, <code>cp</code> remains an indispensable command in the Linux toolkit.
+        </p>
+    </div>
+
+    <div class="quote-container">
+        <p class="quote">"An investment in knowledge pays the best interest."</p>
+        <p class="author">— Benjamin Franklin</p>
+    </div>
+</body>
+
+</html>

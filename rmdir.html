@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="linux-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Link to navigate to the top -->
+    <a href="#top" class="scroll-to-top">
+        <img src="up-arrow.png" alt="Go to top" class="up-arrow">
+    </a>
+
+    <!-- Page content -->
+    <h1 class="page-heading" id="top">rmdir Command</h1>
+
+    <ul id="nav">
+        <li class="nav-item"><a href="home.html"><img src="home-icon.png" alt="Home" class="home-icon" /></a></li>
+        <li class="nav-item"><a href="ls.html">ls</a></li>
+        <li class="nav-item"><a href="cd.html">cd</a></li>
+        <li class="nav-item"><a href="pwd.html">pwd</a></li>
+        <li class="nav-item"><a href="mkdir.html">mkdir</a></li>
+        <li class="nav-item"><a class="active" href="rmdir.html">rmdir</a></li>
+        <li class="nav-item"><a href="cp.html">cp</a></li>
+        <li class="nav-item"><a href="mv.html">mv</a></li>
+        <li class="nav-item"><a href="cat.html">cat</a></li>
+        <li class="nav-item"><a href="touch.html">touch</a></li>
+        <li class="nav-item"><a href="grep.html">grep</a></li>
+    </ul>
+
+    <div class="info-box">
+        <h2 class="info-heading">rmdir Command in Linux</h2>
+        <p class="info-paragraph">
+            The ‘rmdir’ command is a specialized tool designed specifically for removing empty directories, helping to maintain a clean file system and avoid accidental data loss.
+        </p>
+
+        <h3>Purpose</h3>
+        <p class="info-paragraph">
+            - The main purpose of rmdir is to help users clean up and manage their file system by removing directories that are no longer needed, but only if they are empty.
+        </p>
+
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>rmdir [option]... [directory]...</code></pre>
+        </div>
+
+        <h2 class="info-heading2">Some Practical Examples of the rmdir Command</h2>
+
+        <h3>1. Details of rmdir</h3>
+        <p class="info-paragraph2">
+            ‘rmdir’ command is similar to the rm command, but rmdir only removes empty directories. So first, we will use the help flag to list down all the available options for the rmdir command:
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>rmdir --help</code></pre>
+        </div>
+        <img src="rmdir_0.png" alt="Linux Commands" class="zoom-image bro" /><br>
+
+        <h3>2. The Basic rmdir Command</h3>
+        <p class="info-paragraph2">
+            Let’s start the examples with a section with the simple rmdir command to remove multiple directories, and here is the basic syntax:
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>rmdir mydir1 mydir2 mydir3 .....</code></pre>
+        </div>
+        <p class="info-paragraph2">
+            Here we will remove OS and Sample directories through the following command:
+        </p>
+        <img src="rmdir_1.png" alt="Linux Commands" class="zoom-image bro" /><br>
+
+        <h3>3. The ‘-v’ Option</h3>
+        <p class="info-paragraph2">
+            If you want the terminal to display a message after removing the directory, you can use the -v option with the rmdir command:
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>rmdir -v dir1 dir2 dir3</code></pre>
+        </div>
+        <img src="rmdir_3.png" alt="Linux Commands" class="zoom-image bro" /><br>
+    </div>
+
+    <div class="info-box">
+        <h2 class="info-heading">Conclusion</h2>
+        <p class="info-paragraph">
+            The rmdir command is an essential tool in Linux for removing empty directories. While it is a straightforward command, it plays a crucial role in maintaining a clean and organized file system. Understanding its syntax and limitations, such as the requirement for directories to be empty, helps users avoid errors and unintended data loss. By mastering the use of rmdir, users can efficiently manage directories and ensure their systems remain clutter-free. This command is particularly useful for administrators and users who need to remove redundant directories as part of regular system maintenance.
+        </p>
+    </div>
+
+    <div class="quote-container">
+        <p class="quote">"Education is the most powerful weapon which you can use to change the world."</p>
+        <p class="author">— Nelson Mandela</p>
+    </div>
+</body>
+
+</html>

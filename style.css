@@ -1,0 +1,231 @@
+body {
+    font-family: "Raleway", Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #f8d7da, #d9534f, #9e1a1f); /* Gradient from light red to dark red */
+    color: #721c24; /* Dark red text for good contrast */
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 4em; /* Increase the font size */
+    font-weight: bold;
+    margin-top: 20px; /* Space from the top of the page */
+    color: #b02a2a; /* Red color for the heading */
+    font-family: 'Dancing Script', cursive, 'Comic Sans MS', 'Brush Script MT', sans-serif; /* Fallback options */
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d9534f; /* Red background for navigation */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #bbb;
+}
+
+.nav-item:last-child {
+    border-right: none;
+}
+
+.nav-item a {
+    display: block;
+    color: white; /* White text on red background */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: #c9302c; /* Slightly darker red for hover effect */
+}
+
+.nav-item a.active {
+    background-color: #92292d; /* Darker red for active state */
+}
+
+.home-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.quote-container {
+    background-color: #df4b46; /* Slightly darker red for distinction */
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    margin: 0; /* Full width */
+    color: #ffffff; /* White text for excellent contrast */
+    border-radius: 0; /* Removed rounding for a sharp look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds depth */
+    width: 100%; /* Ensures it spans full width */
+}
+
+.quote {
+    font-size: 25px; /* Keeps the quote text size large */
+    margin: 0;
+    color: #ffe5e5; /* Light shade of white matching the theme */
+    font-style: italic; /* Keeps the quote italicized */
+}
+
+.author {
+    margin-top: 10px;
+    font-size: 20px; /* Keeps the author text size slightly smaller */
+    font-style: normal; /* Author name in normal font */
+    font-weight: bold;
+    color: #f8d7da; /* Lighter red matching the theme */
+}
+
+.footer {
+    background-color: #e63b3b; /* Lighter red for the footer background */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    padding: 20px 0; /* Adds spacing above and below */
+    margin-top: 20px; /* Adds space above the footer */
+    font-size: 1em; /* Standard font size */
+    border-top: 3px solid #92292d; /* Slightly darker top border for separation */
+}
+
+.footer a {
+    color: #ffe5e5; /* Light pinkish-red for footer links */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px; /* Space between links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+    color: #ffffff; /* White color on hover */
+}
+
+
+
+/* Info Box Styling */
+.info-box {
+    width: 80%; /* Sets the width of the box */
+    max-width: 800px; /* Ensures the box doesn't get too wide */
+    margin: 40px auto; /* Centers the box horizontally */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the box */
+    border: 2px solid #d9534f; /* Red border */
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    text-align: center; /* Centers the content inside the box */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content inside vertically */
+}
+
+.info-heading {
+    font-size: 2em; /* Large font size for the heading */
+    color: #d9534f; /* Red color for heading */
+    margin-bottom: 10px; /* Space between heading and paragraph */
+}
+
+.info-paragraph {
+    font-size: 1.2em; /* Larger paragraph font */
+    color: #721c24; /* Dark red for the text */
+    text-align: justify; /* Justifies the text */
+    padding: 10px; /* Adds padding around the paragraph (you can adjust this value) */
+}
+
+.info-heading2 {
+    font-size: 1.8em; /* Slightly smaller than main heading */
+    color: #d9534f; /* Matching red for consistency */
+    margin: 10; /* No extra spaces */
+    padding: 0; /* No extra spaces */
+}
+
+.info-paragraph2 {
+    font-size: 1em; /* Standard paragraph size */
+    color: #721c24; /* Matching dark red */
+    text-align: justify; /* Justify the text */
+    margin: 10; /* No extra spaces */
+    padding: 0; /* No extra spaces */
+}
+
+/* Image Zoom Effect */
+.zoom-image {
+    width: 100%; /* Makes the image fill the container width */
+    max-width: 400px; /* Limits the maximum size of the image */
+    height: auto; /* Maintains aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    border-radius: 8px; /* Round the image corners */
+    margin-top: 20px; /* Adds space between paragraph and image */
+    object-fit: cover; /* Ensures the image doesn't distort */
+}
+
+.zoom-image:hover {
+    transform: scale(1.5); /* Zoom effect on hover */
+}
+
+/* Scroll-to-Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d9534f; /* Red background for the button */
+    border-radius: 50%; /* Circular button */
+    padding: 8px; /* Small padding for smaller button */
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    width: 40px; /* Fixed size of the button */
+    height: 40px; /* Fixed size of the button */
+    display: flex; /* Flexbox for centering the image */
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
+}
+
+.scroll-to-top:hover {
+    background-color: #c9302c; /* Slightly darker red on hover */
+}
+
+.up-arrow {
+    width: 20px; /* Adjusted size of the up-arrow */
+    height: 20px; /* Adjusted size of the up-arrow */
+}
+
+.info-box2 {
+    margin: 10px 0; /* Reduce top and bottom margin */
+    padding: 10px; /* Adjust padding to make it tighter */
+    background-color: #f8d7da; /* Optional: lighter background for contrast */
+    border: 1px solid #d9534f; /* Optional: match border style */
+    border-radius: 10px; /* Slightly round the corners */
+    text-align: center; /* Center-align the text */
+}
+
+h3 {
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Ensures no extra space is added */
+    display: inline; /* Makes the h3 appear inline */
+}
+
+.bro {
+    border: 5px solid #d9534f; /* Solid red border matching theme */
+    box-shadow: inset 0px 0px 20px rgba(217, 83, 79, 0.5); /* Subtle inset shadow with theme red */
+}
+.last-box {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 20px;   /* Optional: add margin above the image */
+}
+
+.last-box img {
+    max-width: 100%;    /* Ensure image scales down on smaller screens */
+    height: auto;       /* Maintain aspect ratio of the image */
+}
+
+
+
+

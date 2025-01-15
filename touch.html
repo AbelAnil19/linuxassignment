@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="linux-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Link to navigate to the top -->
+    <a href="#top" class="scroll-to-top">
+        <img src="up-arrow.png" alt="Go to top" class="up-arrow">
+    </a>
+
+    <!-- Page content -->
+    <h1 class="page-heading" id="top">touch Command</h1>
+
+    <ul id="nav">
+        <li class="nav-item"><a href="home.html"><img src="home-icon.png" alt="Home" class="home-icon" /></a></li>
+        <li class="nav-item"><a href="ls.html">ls</a></li>
+        <li class="nav-item"><a href="cd.html">cd</a></li>
+        <li class="nav-item"><a href="pwd.html">pwd</a></li>
+        <li class="nav-item"><a href="mkdir.html">mkdir</a></li>
+        <li class="nav-item"><a href="rmdir.html">rmdir</a></li>
+        <li class="nav-item"><a href="cp.html">cp</a></li>
+        <li class="nav-item"><a href="mv.html">mv</a></li>
+        <li class="nav-item"><a href="cat.html">cat</a></li>
+        <li class="nav-item"><a class="active" href="touch.html">touch</a></li>
+        <li class="nav-item"><a href="grep.html">grep</a></li>
+    </ul>
+
+    <div class="info-box">
+        <h2 class="info-heading">touch Command in Linux</h2>
+        <p class="info-paragraph">
+            The touch command is a standard command used in the UNIX/Linux operating system which is used to create, change and modify the timestamps of a file. Basically, there are two different commands to create a file in the Linux system which are as follows:
+            <br>
+            touch command: It is used to create a file without any content. The file created using the touch command is empty. This command can be used when the user doesn’t have data to store at the time of file creation.
+            <br>
+            Using touch Command Initially, we are in the home directory and this can be checked using the pwd command. Checking the existing files using the command ls and then long listing command(ll) is used to gather more details about existing files.
+        </p>
+
+        <h3>Purpose</h3>
+        <p class="info-paragraph">
+            The touch command in Linux is primarily used to create new, empty files and to modify the timestamps of existing files. By default, it updates the access and modification times of a file to the current time. If the specified file does not exist, touch creates an empty file with that name. This command is useful for quickly creating files without opening them or for updating file timestamps for tasks such as backups or system maintenance.
+        </p>
+
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>touch [options] file_name</code></pre>
+        </div>
+
+        <h2 class="info-heading2">Practical Examples of touch Command in Linux</h2>
+
+        <h3>1. How to Create an Empty Files by Using Touch Command in Linux</h3>
+        <p class="info-paragraph2">
+            The most basic use of ‘cat’ is to display the contents of a file on the terminal. This can be achieved by simply providing the filename as an argument:
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>touch [options] file_name</code></pre>
+        </div><br>
+        <p class="info-paragraph2">
+            The file which is created can be viewed by ls command and to get more details about the file you can use long listing command ll or ls -l command. Here a file with name ‘File1‘ is created using the touch command.
+        </p>
+        <img src="touch_0.png" alt="Linux Commands" class="zoom-image bro" /><br>
+
+        <h3>2. `-a` option in `touch` Command to Only Update Access Time</h3>
+        <p class="info-paragraph2">
+            This command is used to change access time only. To change or update the last access or modification times of a file, touch -a command is used.
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>touch -a fileName</code></pre>
+        </div>
+        <img src="touch_1.png" alt="Linux Commands" class="zoom-image bro" /><br>
+
+        <h3>3. Creating an Empty File Using `-c` option in `touch` Command</h3>
+        <p class="info-paragraph2">
+            This command is used to check whether a file is created or not. If not created, it avoids creating it. This command prevents the creation of files.
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>touch -c fileName</code></pre>
+        </div>
+        <img src="touch_2.png" alt="Linux Commands" class="zoom-image bro" /><br>
+    </div>
+
+    <div class="info-box">
+        <h2 class="info-heading">Conclusion</h2>
+        <p class="info-paragraph">
+            The touch command in Linux is a simple yet powerful tool for creating new empty files and updating file timestamps. Its versatility allows users to quickly generate files without opening editors, making it ideal for scripting and file management tasks. Whether you're managing timestamps for backups or creating placeholder files, the touch command plays a crucial role in day-to-day Linux operations. Its efficiency and ease of use make it an essential command for both beginners and advanced users.
+        </p>
+    </div>
+
+    <div class="quote-container">
+        <p class="quote">"Don’t let what you cannot do interfere with what you can do."</p>
+        <p class="author">— John Wooden</p>
+    </div>
+</body>
+
+</html>

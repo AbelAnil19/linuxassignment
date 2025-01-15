@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="linux-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Link to navigate to the top -->
+    <a href="#top" class="scroll-to-top">
+        <img src="up-arrow.png" alt="Go to top" class="up-arrow">
+    </a>
+
+    <!-- Page content -->
+    <h1 class="page-heading" id="top">pwd Command</h1>
+
+    <ul id="nav">
+        <li class="nav-item"><a href="home.html"><img src="home-icon.png" alt="Home" class="home-icon" /></a></li>
+        <li class="nav-item"><a href="ls.html">ls</a></li>
+        <li class="nav-item"><a href="cd.html">cd</a></li>
+        <li class="nav-item"><a class="active" href="pwd.html">pwd</a></li>
+        <li class="nav-item"><a href="mkdir.html">mkdir</a></li>
+        <li class="nav-item"><a href="rmdir.html">rmdir</a></li>
+        <li class="nav-item"><a href="cp.html">cp</a></li>
+        <li class="nav-item"><a href="mv.html">mv</a></li>
+        <li class="nav-item"><a href="cat.html">cat</a></li>
+        <li class="nav-item"><a href="touch.html">touch</a></li>
+        <li class="nav-item"><a href="grep.html">grep</a></li>
+    </ul>
+
+    <div class="info-box">
+        <h2 class="info-heading">pwd Command in Linux</h2>
+        <p class="info-paragraph">The ‘pwd,’ which stands for “print working directory.” It prints the path of the working directory, starting from the root. pwd is a shell built-in command (pwd) or an actual binary (/bin/pwd).</p>
+
+        <h3>Purpose</h3>
+        <p class="info-paragraph">
+            - It helps users identify their current location in the directory structure. <br>
+            - It ensures clarity during file management and navigation, especially in complex directory hierarchies.
+        </p>
+
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>pwd [OPTIONS]</code></pre>
+        </div>
+
+        <p class="info-paragraph">This command doesn’t have any arguments or options, but it can accept flags for specific behavior.</p>
+
+        <h3>Flags For Specific Behavior in `pwd` Command in Linux</h3>
+        <p class="info-paragraph">
+            - The “-L” flag resolves symbolic links and prints the path of the target directory.<br>
+            - The default behavior of the shell built-in “pwd” is equivalent to using “pwd -L”.<br>
+            - The “-P” flag displays the actual path without resolving symbolic links.<br>
+            - The default behavior of the binary “/bin/pwd” is the same as using “pwd -P”.<br>
+        </p>
+        <div class="info-box2">
+            <strong>Syntax</strong>
+            <pre><code>
+pwd -L: Prints the symbolic path.<br>
+pwd -P: Prints the actual path.</code></pre>
+        </div>
+
+        <h2 class="info-heading2">Some Practical Examples of the pwd Command</h2>
+
+        <h3>1. Displaying the Current Working Directory Using Built-in pwd (pwd):</h3>
+        <p class="info-paragraph2">To print the current working directory, simply enter:</p>
+        <img src="pwd_1.png" alt="Linux Commands" class="zoom-image bro" />
+        <p class="info-paragraph2">The output will be the absolute path of your current location in the file system.</p><br>
+
+        <h3>2. Displaying the Current Working Directory Using Binary pwd (/bin/pwd):</h3>
+        <img src="pwd_2.png" alt="Linux Commands" class="zoom-image bro" /><br>
+        <p class="info-paragraph2">
+            The default behavior of Built-in pwd is the same as pwd -L. Using “pwd -L” to obtain the symbolic path of a directory containing a symbolic link.<br>
+            The default behavior of /bin/pwd is the same as pwd -P. Utilizing “pwd -P” to display the actual path, ignoring symbolic links.
+        </p>
+
+        <h3>3. The $PWD Environment Variable</h3>
+        <p class="info-paragraph2">The $PWD environment variable is a dynamic variable that stores the path of the current working directory. It holds the same value as ‘pwd -L’ – representing the symbolic path.</p>
+        <img src="pwd_3.png" alt="Linux Commands" class="zoom-image bro" />
+        <p class="info-paragraph2">Executing this command prints the symbolic path stored in the $PWD environment variable.<br></p>
+    </div>
+
+    <div class="info-box">
+        <h2 class="info-heading">Conclusion</h2>
+        <p class="info-paragraph">
+            The pwd command is an essential tool in Linux that helps users identify their current working directory in the file system. It is simple yet powerful, ensuring that users always know their location within the directory structure. This command is particularly useful for navigating complex systems and scripting tasks where directory context is critical. Mastering the pwd command, along with its options, lays the foundation for efficient system navigation and management in Linux environments.
+        </p>
+    </div>
+
+    <div class="quote-container">
+        <p class="quote">"The purpose of education is to replace an empty mind with an open one."</p>
+        <p class="author">— Malcolm Forbes</p>
+    </div>
+
+</body>
+
+</html>
